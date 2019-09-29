@@ -19,16 +19,49 @@
 
 		<style>
 			.wrapper {
+				padding: 0 10%;
 				height: 100%;
 				width: 100%;
-				background-color: #fff;
+				background-color: #F9F9FE;
 				color: #444;
 				display: grid;
+				text-align: center;
 				grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 				gap: 20px;
 			}
 
+			.wrapper_jobs {
+				padding: 0 10%;
+				height: 100%;
+				width: 100%;
+				background-color: #F9F9FE;
+				color: #444;
+				display: grid;
+				text-align: center;
+				grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+				gap: 20px;
+			}
+
+			.wrapper_research {
+				padding: 0 30%;
+				height: 100%;
+				width: 100%;
+				background-color: #F9F9FE;
+				color: #444;
+				display: grid;
+				text-align: center;
+				grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+				gap: 20px;
+			}
+
+
+
 			.box {
+				text-align: center;
+				vertical-align: center;
+				align-content: center;
+				justify-content: center;
+			    vertical-align: center;
 				background-color: rgb(0, 140, 158);
 				color: #fff;
 				border-radius: 5px;
@@ -50,6 +83,34 @@
 				max-height: 500px;
 			}
 
+			.box-text{
+				color:white;  
+				background:rgba(0,0,0,0.5); 
+				height:100%; 
+				width:100%;
+				padding:10%;
+				font-size:18px;
+			}
+
+			.box-text-title{
+				color:white;
+				margin-bottom: 10%;
+				text-transform: uppercase
+			}
+			#work{
+				margin-top:-300px;
+			}
+
+			#research{
+				margin-top:-250px; 
+				margin-bottom:-200px;
+			}
+
+			@media screen and (max-width: 1350px) {
+				#work{
+					margin-top:-100px;
+				}
+		}
 
 			@media screen and (max-width: 1200px) {
 				.my-img {
@@ -64,6 +125,12 @@
 					height: 300px;
 				}
 
+				.my-img {
+					transform:scale(0.8);
+				}
+				.my-img {
+					margin-bottom:-40px;
+				}
 
 			}
 
@@ -76,11 +143,35 @@
 					margin-top: 0px;
 
 				}
+
+				#work{
+					margin-top:150px;
+				}
+			
 			}
 
 			@media screen and (max-width: 700px) {
+
+				.my-img {
+					transform:scale(1);
+				}
 				.projects_footer_size {
 					height: 500px;
+				}
+				.my-img {
+					margin-bottom:0px;
+				}
+			}
+
+			@media screen and (max-width: 600px) {
+				#work{
+					margin-top:300px;
+				}
+			}
+
+			@media screen and (max-width: 525px) {
+				#work{
+					margin-top:750px;
 				}
 			}
 
@@ -164,7 +255,7 @@
 							Machine Learning Engineer <br />🤖🧠
 						</h1>
 						<p class="mx-auto text-white  mt-20 mb-40">
-							I like building projects that have impact 🌍
+							Thanks for stopping by 😊
 						</p>
 						<a href="#project" class="text-uppercase header-btn"> Look at my latest Projects</span></a>
 					</div>
@@ -175,7 +266,7 @@
 
 
 		<!-- Start project Area -->
-		<section class="project-area section-gap pb-100" id="project">
+		<section class="project-area section-gap " id="project">
 			<!-- <div class="row">
 					<div class="col-lg-12"> -->
 			<div class="container">
@@ -190,236 +281,209 @@
 			</div>
 
 
-			<div class="single-project pb-150 col-lg-12">
+			<div class="single-project pb-150 col-lg-12" style="margin-top:-40px;">
 				<div class="pb-150 wrapper">
 					<a class="box a" href="https://fitpic.io/" target="_blank"
 					 style="background-image: url('img/fitpic-logo-bg.png');border: 1px solid #DCDCDC;
 								background-size:cover; background-repeat:no-repeat;background-position: center center;">
-						<p style="color:white;background:rgba(0,0,0,0.5);">
-							FitPic - Know Your Body Better With AI</p>
+						<div class="box-text">
+								<h3 class="box-text-title">Fitpic AI</h3>
+							Measuring Body Fat Percentage with neural networks</div>
 					</a>
-					<a class="box b"
-					style="background-image: url('img/nike.jpg');border: 1px solid #DCDCDC;
-								background-size:cover; background-repeat:no-repeat;background-position: center center;">
-						<p style="color:white;background:rgba(0,0,0,0.5);">Data and Software Engineering Intern</p>
-					</a>
-					<a class="box c" 
-					style="background-image: url('img/Reddit.png');
-								background-size:cover; background-repeat:no-repeat;background-position: center center;
-							 background-color: #FF4500;border: 1px solid #DCDCDC;">
-						<p style="color:white;background:rgba(0,0,0,0.5);">Research Paper - Reddit post popularity
-							prediction</p>
-					</a>
-					<a class="box d" 
-					style=" background-image: url('img/caffe-net.png');
-								background-size:cover; background-repeat:no-repeat;background-position: center center;
-								background-color: #6F4E36; border: 1px solid #DCDCDC;">
-						<p style="color:white;background:rgba(0,0,0,0.5);">Research Paper - Facial Age Classification with
-							Caffe Net CNN</p>
-					</a>
-					<a class="box e" href="https://www.youtube.com/watch?v=T9cAixLaW-8" target="_blank"
-						style="background-image: url('img/Ingeniarius.png'); border: 1px solid #DCDCDC;
-								 background-color: red; background-size:cover; background-repeat:no-repeat;background-position: center center;">
-						<p style="color:white;background:rgba(0,0,0,0.5);">Ingeniarius - Self-driving RC Car Robotics
-							Intern</p>
-					</a>
-
-					<a class="box f" href="https://chrome.google.com/webstore/detail/yangify/nmpebejinamipihkbljdebclabebjndc?authuser=1" target="_blank"
+					<a class="box j" href="https://www.hackerearth.com/challenges/hackathon/cal-hacks-50/dashboard/a14712b/submission/" target="_blank"
+					style="background-image: url('img/silicon-valet.png'); border: 1px solid #DCDCDC;
+							 background-color: white; background-size:cover; background-repeat:no-repeat;background-position: center center;">
+					<div class="box-text">
+							<h3 class="box-text-title" style="font-size: 20px;">Silicon Valet </h3>
+						Computer Vision Car Parking App 
+						<div style="color:white; margin-top: 10%; font-size:16px;">🏆$1000 Berkeley Fellowship + Ford Award Winner</div>
+					</div>
+				</a>
+					<!-- <a class="box f" href="https://chrome.google.com/webstore/detail/yangify/nmpebejinamipihkbljdebclabebjndc?authuser=1" target="_blank"
 						style="background-image: url('img/yangify.png'); border: 1px solid #DCDCDC;
 								 background-color: red; background-size:cover; background-repeat:no-repeat;background-position: center center;">
-						<p style="color:white;background:rgba(0,0,0,0.5);">Yangify - Replacement Chrome extension</p>
-					</a>
-					<a class="box g" href="https://www.youtube.com/channel/UC8n1bMFsJSicOoDtpS3p0VA" target="_blank"
+						
+						<div class="box-text">
+								<h3 class="box-text-title">yangify</h3>
+								Replacement Chrome extension</div>
+					</a> -->
+					<!-- <a class="box g" href="https://www.youtube.com/channel/UC8n1bMFsJSicOoDtpS3p0VA" target="_blank"
 						style="background-image: url('img/cc.png'); border: 1px solid #DCDCDC;
 								 background-color: white; background-size:cover; background-repeat:no-repeat;background-position: center center;">
-						<p style="color:white;background:rgba(0,0,0,0.5);">Carmont Connection - Machine learning tutorials
-						</p>
-					</a>
+						
+						<div class="box-text">
+								<h3 class="box-text-title" style="font-size:20px;">Carmont Connection </h3>
+								Machine learning tutorials</div>
+					</a> -->
 					<a class="box h" href="https://github.com/ncarmont/toxic-tweet/blob/master/README.MD" target="_blank"
-						style="background-image: url('img/toxic-tweet.png'); border: 1px solid #DCDCDC;
+						style="background-image: url('img/twitter.png'); border: 1px solid #DCDCDC;
 								 background-color: white; background-size:cover; background-repeat:no-repeat;background-position: center center;">
-						<p style="color:white;background:rgba(0,0,0,0.5);">Toxic Tweet - Twitter NLP Hate Speech detector
-						</p>
+						<div class="box-text">
+							<h3 class="box-text-title" style="font-size:20px;">Toxic Tweet </h3>
+							 Hate speech detector for Twitter with logistic regression
+						</div>
 					</a>
-					<a class="box i" href="https://onecherry.co.uk" target="_blank"
-						style="background-image: url('img/one-cherry.png'); border: 1px solid #DCDCDC;
+					<a class="box l" href="https://www.youtube.com/watch?v=urYc33UuqRU" target="_blank"
+						style="background-image: url('img/precious-plastic.png'); border: 1px solid #DCDCDC;
 								 background-color: white; background-size:cover; background-repeat:no-repeat;background-position: center center;">
-						<p style="color:white;background:rgba(0,0,0,0.5);">One Cherry - The UK's first Online Charity Shop
-							Platform</p>
+						
+						<div class="box-text">
+								<h3 class="box-text-title" style="font-size:20px;">Precious Plastic Edinburgh </h3>
+								Building plastic recycling machines
+								<div style="color:white; margin-top: 10%; font-size:16px;">🏆SRS Award</div>
+							</div>
 					</a>
-					<a class="box j" href="https://github.com/bhavingpt/silicon-valet" target="_blank"
-						style="background-image: url('img/silicon-valet.png'); border: 1px solid #DCDCDC;
-								 background-color: white; background-size:cover; background-repeat:no-repeat;background-position: center center;">
-						<p style="color:white;  background:rgba(0,0,0,0.5);">Silicon Valet - Computer Vision Car Parking
-							app ($1k Berkeley Fellowship + Ford Prize Winner)</p>
-					</a>
+					<a class="box m" href="https://www.youtube.com/watch?v=7xsV-7jg59A" target="_blank"
+					style="background-image: url('img/zesty.png'); border: 1px solid #DCDCDC;
+							 background-color: white; background-size:cover; background-repeat:no-repeat;background-position: center center;">
+					<div class="box-text">
+					<h3 class="box-text-title" style="font-size:20px;">Zesty</h3>
+					Leftover Food sharing platform concept
+					<div style="color:white; margin-top: 10%; font-size:16px;">🏆Peer Choice Award Winner</div>
+				</div>
+				</a>
+				
 				</div>
 			</div>
 			</div>
-
-
-
-			<!-- <div class="row">
-						<div class="col-lg-6 project-left">
-							
-							<div class="single-project pb-100">
-								<img class="img-fluid" src="img/l1.jpg" alt="">
-								<h4 class="pt-100 pb-30"><a href="#">Nike - Data and Software Engineering</a></h4>
-								<p>
-									It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its popularity and technological.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-6 project-left">
-							<div class="single-project pb-100">
-								<img class="img-fluid" src="img/l1.jpg" alt="">
-								<h4 class="pt-100 pb-30"><a href="https://youtu.be/T9cAixLaW-8">Ingeniarius - Self-driving RC Car Robotics Intern</a></h4>
-								<p>
-									It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its popularity and technological.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-6 project-left">
-							<div class="single-project pb-100">
-								<img class="img-fluid" src="img/l1.jpg" alt="">
-								<h4 class="pt-100 pb-30"><a href="https://fitpic.co/">FitPic - AI Camera Health App</a></h4>
-								<p>
-									It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its popularity and technological.
-								</p>
-							</div>
-							<div class="single-project">
-								<img class="img-fluid" src="img/l3.jpg" alt="">
-								<h4 class="pt-100 pb-30"><a href="#">Yangify - Meme Chrome extension </a></h4>
-								<p>
-									It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its popularity and technological.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-6 project-right">
-							<div class="single-project">
-								<h4 class="pt-30 pb-30"><a href="https://www.carmontconnection.com/">Carmont Connection - Machine learning youtube channel + articles</a></h4>
-								<p class=" pb-100">
-									It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its popularity and technological.
-								</p>
-								<img class="img-fluid" src="img/l2.jpg" alt="">
-							</div>
-							<div class="single-project">
-								<h4 class="pt-100 pb-30"><a href="https://github.com/ncarmont/explanatory-NLP-156">Toxic Tweet - NLP Twitter Hate Speech detector </a></h4>
-								<p class=" pb-30">
-									It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its popularity and technological.
-								</p>
-								<img class="img-fluid" src="img/l4.jpg" alt="">
+		</section>
+			<!-- Start project Area -->
+			<section class="project-area" id="work">
+					<!-- <div class="row">
+							<div class="col-lg-12"> -->
+					<div class="container">
+						<div class="row d-flex justify-content-center">
+							<div class="menu-content pb-70 col-lg-8" style="margin-top:450px;">
+								<div class="title text-center">
+									<h1 class="mb-10" style="margin-top:-40px;">💼 Work Experience</h1>
+									<p>Where I've been working recently</p>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-lg-6 project-left">
-							<div class="single-project pb-100">
-								<img class="img-fluid" src="img/l1.jpg" alt="">
-								<h4 class="pt-100 pb-30"><a href="https://onecherry.co.uk/">One Cherry - The UK's first Online Charity Shop Platform</a></h4>
-								<p>
-									It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its popularity and technological.
-								</p>
+		
+					<div class="single-project pb-150 col-lg-12" style="margin-top:-40px;">
+						<div class="pb-150 wrapper_jobs">
+							<a class="box a" href="https://fitpic.io/" target="_blank"
+							 style="background-image: url('img/fitpic-logo-bg.png');border: 1px solid #DCDCDC;
+										background-size:cover; background-repeat:no-repeat;background-position: center center;">
+
+								<div class="box-text">
+										<h3 class="box-text-title">FitPic</h3>
+										Founder and Machine Learning Engineer
+										<div style="color:white; margin-top: 10%; font-size:11px;"> Developing a Tensorflow model for visual body fat prediction</div>
+								</div>
+							</a>
+							<a class="box b"
+							style="background-image: url('img/nike.jpg');border: 1px solid #DCDCDC;
+										background-size:cover; background-repeat:no-repeat;background-position: center center;">
+								
+								<div class="box-text">
+										<h3 class="box-text-title">Nike</h3>
+										Data and Software Engineering Intern
+										<div style="color:white; margin-top: 10%; font-size:12px;"> Built Data Visualisation tool tallying 180K+ users</div>
+								</div>
+							</a>
+							<a class="box e" href="https://www.youtube.com/watch?v=T9cAixLaW-8" target="_blank"
+								style="background-image: url('img/Ingeniarius.png'); border: 1px solid #DCDCDC;
+										 background-color: red; background-size:cover; background-repeat:no-repeat;background-position: center center;">
+								
+								<div class="box-text">
+										<h3 class="box-text-title">Ingeniarius</h3>
+										Self-driving RC Car Robotics Fellowship
+										<div style="color:white; margin-top: 10%; font-size:11px;"> Worked with team of students to develop RC car for Robotcraft 2017</div>
+								</div>
+							</a>
+
+							<a class="box k" href="https://www.facebook.com/SEWF2019/videos/2085655315081033/" target="_blank"
+							style="background-image: url('img/pwc.jpg'); border: 1px solid #DCDCDC;
+									 background-color: white; background-size:cover; background-repeat:no-repeat;background-position: center center;">
+									<div class="box-text">
+											<h3 class="box-text-title">PwC</h3>
+											The Young Talents Program
+											<div style="color:white; margin-top: 10%; font-size:11px;"> Week-long enterprise Program on sustainabible business practices</div>
+									</div>
+						</a>
+							<a class="box i" href="https://onecherry.co.uk" target="_blank"
+								style="background-image: url('img/one-cherry.png'); border: 1px solid #DCDCDC;
+										 background-color: white; background-size:cover; background-repeat:no-repeat;background-position: center center;">
+							<div class="box-text">
+									<h3 class="box-text-title">One Cherry</h3>
+									Early Software Engineer
+									<div style="color:white; margin-top: 10%; font-size:11px;"> Helped develop charity shop platform with 1000 visits in 3 days</div>
 							</div>
-							<div class="single-project">
-								<img class="img-fluid" src="img/l3.jpg" alt="">
-								<h4 class="pt-100 pb-30"><a href="https://www.hackerearth.com/challenges/hackathon/cal-hacks-50/dashboard/a14712b/submission/">Silicon Valet - Computer Vision Car Parking app ($1k Berkeley Fellowship + Ford Prize Winner)</a></h4>
-								<p>
-									It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its popularity and technological.
-								</p>
+							</a>
+						
+						</div>
+					</div>
+					</div>
+				</section>
+				<section class="project-area" id="research">
+						<!-- <div class="row">
+								<div class="col-lg-12"> -->
+						<div class="container">
+							<div class="row d-flex justify-content-center">
+								<div class="menu-content pb-70 col-lg-8" style="margin-top:100px;">
+									<div class="title text-center">
+										<h1 class="mb-10" style="margin-top:-40px;">🔬 Unpublished Research</h1>
+										<p>Some research I've worked on</p>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-6 project-right">
-							<div class="single-project">
-								<h4 class="pt-30 pb-30"><a href="https://youtu.be/urYc33UuqRU">Precious Plastic Edinburgh - Creating Recycling machines to recycle PET plastic bottles into 3D printer filament</a></h4>
-								<p class=" pb-100">
-									It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its popularity and technological.
-								</p>
-								<img class="img-fluid" src="img/l2.jpg" alt="">
-							</div>
-							<div class="single-project">
-								<h4 class="pt-100 pb-30"><a href="https://github.com/ncarmont/Senti-Stock">Senti Stock - Google News Sentiment Analysis Stock predictor  </a></h4>
-								<p class=" pb-30">
-									It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its popularity and technological.
-								</p>
-								<img class="img-fluid" src="img/l4.jpg" alt="">
+			
+						<div class="single-project  col-lg-12" style="margin-top:-20px; margin-bottom: 300px;">
+							<div class=" pb-70 wrapper_research" style="background-color: #F9F9FE;">
+								
+
+								
+								
+								<a class="box d" 
+								style=" background-image: url('img/caffe-net.png');
+											background-size:cover; background-repeat:no-repeat;background-position: center center;
+											background-color: #6F4E36; border: 1px solid #DCDCDC;">
+
+
+									<div class="box-text">
+											<h3 class="box-text-title">Deep Learning</h3>
+											Improving Facial Age Classification with our
+										adapted Caffe Net CNN
+									</div>
+								</a>
+								<a class="box c" 
+								style="background-image: url('img/Reddit.png');
+											background-size:cover; background-repeat:no-repeat;background-position: center center;
+										 background-color: #FF4500;border: 1px solid #DCDCDC;">
+
+									<div class="box-text">
+											<h3 class="box-text-title">Recommender Systems</h3>
+											Reddit post popularity prediction with sentiment analysis and collaborative filtering
+									</div>
+									<!-- <p style="color:white;background:rgba(0,0,0,0.5);">Recommender Systems - Predicting Reddit post popularity</p> -->
+								</a>
+							
 							</div>
 						</div>
-
-					</div> -->
-
-		</section>
+						</div>
+					</section>
 		<!-- End project Area -->
 		<!-- Start qualification Area -->
-		<div class="projects_footer_size"></div>
-		<section class="qualification-area pt-170 pb-80" id="resume">
+		<!-- <div class="projects_footer_size"></div> -->
+		<section class="qualification-area" id="resume" style="margin-bottom: 50px;">
 			<div class="container">
 				<div class="row d-flex justify-content-center">
 					<div class="menu-content pb-20 col-lg-8">
 						<div class="title text-center">
-							<h1 class="mb-10">💼 Resume</h1>
-							<p>More career focused stuff</p>
-						</div>
-					</div>
-				</div>
-				<div class="row d-flex justify-content-center">
-					<div class="col-lg-6 col-md-6 qty-left">
-						<div class="single-qly">
-							<h3 class="text-uppercase">Nike </h3>
-							<p>July 2015 to Present</p>
-							<h4 class="pt-20 pb-20">Data and Software Engineering Intern</h4>
-							<p>
-								All users on MySpace will know that there are millions of <br>people out there. Every day
-								besides.
-							</p>
-						</div>
-						<div class="btm-border d-block mx-auto"></div>
-						<div class="single-qly">
-							<h3 class="text-uppercase">Ingeniarius</h3>
-							<p>May 2013 to Present</p>
-							<h4 class="pt-20 pb-20">Self-driving RC Car/Robotics intern</h4>
-							<p>
-								All users on MySpace will know that there are millions of <br>people out there. Every day
-								besides.
-							</p>
-						</div>
-						<div class="btm-border d-block mx-auto"></div>
-						<div class="single-qly">
-							<h3 class="text-uppercase">One Cherry</h3>
-							<p>May 2013 to Present</p>
-							<h4 class="pt-20 pb-20">Full stack developer</h4>
-							<p>
-								All users on MySpace will know that there are millions of <br>people out there. Every day
-								besides.
-							</p>
-						</div>
-						<div class="btm-border d-block mx-auto"></div>
-						<div class="single-qly">
-							<h3 class="text-uppercase">PriceWaterhouse Coopers</h3>
-							<p>May 2013 to Present</p>
-							<h4 class="pt-20 pb-20">Young Talents Program</h4>
-							<p>
-								All users on MySpace will know that there are millions of <br>people out there. Every day
-								besides.
-							</p>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 qty-right">
-						<div class="single-qly">
-							<h3 class="text-uppercase"> Bachelor in Artificial Intelligence <br /> & Software Engineering
-							</h3>
-							<h4 class="pb-20"> The University of Edinburgh</h4>
+							<h1 class="mb-10 margin-top:-80px;">💼 Resume</h1>
+							<p>Want to see my resume?</p>
 
-							<p><b>Session</b>: 2010-11</p>
-							<p><b>Result</b>: 3.78 (In the Scale of 4.00)</p>
-						</div>
-						<div class="btm-border d-block mx-auto"></div>
-						<div class="single-qly">
-							<h3 class="text-uppercase"> Exchange Program</h3>
-							<h4 class="pb-20"> The University of California San Diego</h4>
-
-							<p><b>Session</b>: 2010-11</p>
-							<p><b>Result</b>: 3.78 (In the Scale of 4.00)</p>
+							<div class="myself-wrap" style="background-color: transparent; margin-top:-40px;">
+									<div class="desc">
+										<a class="mt-30 text-uppercase talk-btn" style="transform:scale(1.3)" 
+										href="" download>
+										Download my resume here</span></a>
+									</div>
+								</div>	
 						</div>
 					</div>
 				</div>
@@ -427,131 +491,22 @@
 		</section>
 		<!-- End qualification Area -->
 
-		<!-- Start service Area -->
-		<!-- <section class="service-area section-gap" id="service">
-			<div class="container">
-				<div class="row d-flex justify-content-center">
-					<div class="menu-content pb-70 col-lg-8">
-						<div class="title text-center">
-							<h1 class="mb-10">What I can offer</h1>
-							<p>Some skills I've been developing over the years</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="single-service col-lg-6 col-md-6 mb-30">
-						<div class="icon">
-							<img src="img/s1.png" alt="">
-						</div>
-						<div class="dec">
-							<h4 class="mt-30"><a href="#">Full Stack Developement</a></h4>
-							<p class="mt-20">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-								ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
-							</p>
-						</div>
-					</div>
-					<div class="single-service col-lg-6 col-md-6 mb-30">
-						<div class="icon">
-							<img src="img/s2.png" alt="">
-						</div>
-						<div class="dec">
-							<h4 class="mt-30"><a href="#">Machine Learning Engineering</a></h4>
-							<p class="mt-20">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-								ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
-							</p>
-						</div>
-					</div>
-					<div class="single-service col-lg-6 col-md-6">
-						<div class="icon">
-							<img src="img/s3.png" alt="">
-						</div>
-						<div class="dec">
-							<h4 class="mt-30"><a href="#">Data Science & Analysis</a></h4>
-							<p class="mt-20">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-								ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
-							</p>
-						</div>
-					</div>
-					<div class="single-service col-lg-6 col-md-6">
-						<div class="icon">
-							<img src="img/s4.png" alt="">
-						</div>
-						<div class="dec">
-							<h4 class="mt-30"><a href="#">Product Management</a></h4>
-							<p class="mt-20">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-								ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
-		<!-- End service Area -->
-
 		<!-- Start about Area -->
-		<section class="about-area section-gap" id="contact">
+		<section class="about-area section-gap" id="contact"  style="margin-bottom:-100px;">
 			<div class="container">
 				<div class="row d-flex justify-content-center">
 					<div class="menu-content pb-70 col-lg-8">
 						<div class="title text-center">
-							<h1 class="mb-10"> 📩 Contact</h1>
+							<h1 class="mb-10" style="margin-top:-40px;"> 📩 Contact</h1>
 							<p>Drop me a message</p>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-6 about-left">
-						<p>
-							Hackathon fanatic (attended 6+),
-							love football especially FC Barcelona.
-							Half Spanish, half Australian.
-							Grew up in the Netherlands.
-							Spend Friday nights coding and watching Limitless.
-						</p>
-						<!-- <h4 class="pb-40">Tools Expertness</h4>
-				                <div class="skillbar" data-percent="85%">
-				                    <div class="skill-bar-percent">After Effects 85%</div>
-				                    <div class="skillwrap">
-				                    	<div class="skillbar-bar" style="width: 85%;"></div>
-				                    </div>
-				                </div>
-
-				                <div class="skillbar" data-percent="80%">
-				                    <div class="skill-bar-percent">Photoshop 80%</div>
-				                    <div class="skillwrap">
-				                    	<div class="skillbar-bar" style="width: 80%;"></div>
-									</div>
-				                </div>
-
-				                <div class="skillbar" data-percent="40%">
-				                    <div class="skill-bar-percent">Illustrator 40%</div>
-				                    <div class="skillwrap">
-				                    	<div class="skillbar-bar" style="width: 40%;"></div>
-									</div>
-				                </div>
-
-				                <div class="skillbar" data-percent="70%">
-				                    <div class="skill-bar-percent">Sublime 70%</div>
-				                    <div class="skillwrap">
-				                    	<div class="skillbar-bar" style="width: 70%;"></div>
-									</div>
-				                </div>
-
-				                <div class="skillbar" data-percent="75%">
-				                    <div class="skill-bar-percent">Sketch 75%</div>
-				                    <div class="skillwrap">
-				                    	<div class="skillbar-bar" style="width: 75%;"></div>
-									</div>
-				                </div> -->
-					</div>
-					<div class="col-lg-6 about-right justify-content-end d-flex">
-						<div class="myself-wrap">
+					<div class="col-lg-12" style="width: 100%;text-align: center; margin-top:-90px;">
+						<div class="myself-wrap" style="transform:scale(0.9);">
 							<img class="img-fluid" src="img/about-img.jpg" alt="">
-							<div class="desc">
+							<div class="desc" style="transform:scale(1.15);">
 								<h4>Nick Carmont</h4>
 								<p class="pb-10">Machine Learning Engineer</p>
 								<p><span class="lnr lnr-phone"></span> +44 7786107297</p>
@@ -567,142 +522,19 @@
 		</section>
 		<!-- End about Area -->
 
-		<!-- Start feature Area -->
-		<!-- <section class="feature-area pt-100">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-70 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">Some Features that Made us Unique</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-4 col-md-6 ">
-							<div class="single-feature mb-30">
-								<div class="title d-flex flex-row pb-20">
-									<span class="lnr lnr-user"></span>
-									<h4><a href="#">Expert Technicians</a></h4>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 ">
-							<div class="single-feature mb-30">
-								<div class="title d-flex flex-row pb-20">
-									<span class="lnr lnr-license"></span>
-									<h4><a href="#">Professional Service</a></h4>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 ">
-							<div class="single-feature mb-30">
-								<div class="title d-flex flex-row pb-20">
-									<span class="lnr lnr-phone"></span>
-									<h4><a href="#">Great Support</a></h4>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 ">
-							<div class="single-feature">
-								<div class="title d-flex flex-row pb-20">
-									<span class="lnr lnr-rocket"></span>
-									<h4><a href="#">Technical Skills</a></h4>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 ">
-							<div class="single-feature">
-								<div class="title d-flex flex-row pb-20">
-									<span class="lnr lnr-diamond"></span>
-									<h4><a href="#">Highly Recomended</a></h4>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 ">
-							<div class="single-feature">
-								<div class="title d-flex flex-row pb-20">
-									<span class="lnr lnr-bubble"></span>
-									<h4><a href="#">Positive Reviews</a></h4>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section> -->
-		<!-- End feature Area -->
-
-		<!-- start contact Area -->
-		<!-- <section class="contact-area section-gap" id="contact">
-			<div class="container">
-				<div class="row d-flex justify-content-center">
-					<div class="menu-content pb-20 col-lg-8">
-						<div class="title text-center">
-							<h1 class="mb-10">If you need, Just drop me a line</h1>
-							<p> I'd love to hear from you</p>
-						</div>
-					</div>
-				</div>
-				<form class="form-area mt-60" id="myForm" action="mail.php" method="post" class="contact-form text-right">
-					<div class="row">
-						<div class="col-lg-6 form-group">
-							<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''"
-								onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control"
-								required="" type="text">
-
-							<input name="email" placeholder="Enter email address"
-								pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''"
-								onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control"
-								required="" type="email">
-
-							<input name="subject" placeholder="Enter your subject" onfocus="this.placeholder = ''"
-								onblur="this.placeholder = 'Enter your subject'" class="common-input mb-20 form-control"
-								required="" type="text">
-						</div>
-						<div class="col-lg-6 form-group">
-							<textarea class="common-textarea mt-10 form-control" name="message" placeholder="Messege"
-								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'"
-								required=""></textarea>
-							<button class="primary-btn mt-20">Send Message<span
-									class="lnr lnr-arrow-right"></span></button>
-							<div class="alert-msg">
-							</div>
-						</div>
-					</div>
-				</form>
-
-			</div>
-		</section> -->
-		<!-- end contact Area -->
-
 		<!-- start footer Area -->
-		<!-- <footer class="footer-area section-gap">
+		<footer class="footer-area section-gap">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-5  col-md-6 col-sm-6">
 						<div class="single-footer-widget">
 							<h6>About Me</h6>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-								ut labore dolore magna aliqua.
+							I'm a hackathon fanatic (attended 6+),
+							love football especially FC Barcelona.
+							Half Spanish, half Australian.
+							Grew up in the Netherlands.
+							Spend Friday nights coding and watching Limitless.
 							</p>
 
 							<p class="footer-text">Copyright &copy;<script>
@@ -713,7 +545,7 @@
 
 						</div>
 					</div>
-					<div class="col-lg-5  col-md-6 col-sm-6">
+					<!-- <div class="col-lg-5  col-md-6 col-sm-6">
 						<div class="single-footer-widget">
 							<h6>Newsletter</h6>
 							<p>Stay update with our latest</p>
@@ -724,7 +556,7 @@
 									method="get" class="form-inline">
 
 									<div class="d-flex flex-row">
-
+ 
 										<input class="form-control" name="EMAIL" placeholder="Enter Email"
 											onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
 											required="" type="email">
@@ -742,8 +574,8 @@
 								</form>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+					</div> -->
+					<!-- <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
 						<div class="single-footer-widget">
 							<h6>Follow Us</h6>
 							<p>Let us be social</p>
@@ -754,10 +586,10 @@
 								<a href="#"><i class="fa fa-behance"></i></a>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
-		</footer> -->
+		</footer>
 		<!-- End footer Area -->
 
 		<script src="js/vendor/jquery-2.2.4.min.js"></script>
