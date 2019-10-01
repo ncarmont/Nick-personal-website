@@ -1,329 +1,330 @@
-	<!DOCTYPE html>
-	<html lang="zxx" class="no-js">
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
 
-	<head>
+<head>
 
-		<link rel="icon" href="img/personal-logo.png">
-		<!-- Mobile Specific Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
-		<!-- Author Meta -->
-		<meta name="author" content="colorlib">
-		<!-- Meta Description -->
-		<meta name="description" content="">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="">
-		<!-- meta character set -->
-		<meta charset="UTF-8">
-		<!-- Site Title -->
-		<title>Nick Carmont</title>
+	<link rel="icon" href="img/personal-logo.png">
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="colorlib">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Nick Carmont</title>
 
-		<style>
-			.wrapper {
-				padding: 0 10%;
-				height: 100%;
-				width: 100%;
-				background-color: #F9F9FE;
-				color: #444;
-				display: grid;
-				text-align: center;
-				grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-				gap: 20px;
+	<style>
+		/* HERE'S SOME UGLY ASS CSS */
+		.wrapper {
+			padding: 0 10%;
+			height: 100%;
+			width: 100%;
+			background-color: #F9F9FE;
+			color: #444;
+			display: grid;
+			text-align: center;
+			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+			gap: 20px;
+		}
+
+		.wrapper_jobs {
+			padding: 0 10%;
+			height: 100%;
+			width: 100%;
+			background-color: #F9F9FE;
+			color: #444;
+			display: grid;
+			text-align: center;
+			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+			gap: 20px;
+		}
+
+		.wrapper_research {
+			padding: 0 30%;
+			height: 100%;
+			width: 100%;
+			background-color: #F9F9FE;
+			color: #444;
+			display: grid;
+			text-align: center;
+			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+			gap: 20px;
+		}
+
+
+
+		.box {
+			text-align: center;
+			vertical-align: center;
+			align-content: center;
+			justify-content: center;
+			vertical-align: center;
+			background-color: rgb(0, 140, 158);
+			color: #fff;
+			border-radius: 5px;
+			padding: 20px;
+			font-size: 150%;
+		}
+
+		.box:hover {
+			transform: scale(1.1);
+		}
+
+		.projects_footer_size {
+			height: 150px;
+		}
+
+		.my-img {
+			margin-left: 120px;
+			margin-top: -80px;
+			max-height: 500px;
+		}
+
+		.box-text {
+			color: white;
+			background: rgba(0, 0, 0, 0.6);
+			height: 100%;
+			width: 100%;
+			padding: 10%;
+			font-size: 18px;
+		}
+
+		.box-text-title {
+			color: white;
+			margin-bottom: 10%;
+			text-transform: uppercase
+		}
+
+		#work {
+			margin-top: -280px;
+		}
+
+		#research {
+			margin-top: -250px;
+			margin-bottom: -200px;
+		}
+
+
+		/* HERE'S SOME SUPER RESPONSIVE CSS LOL */
+		@media screen and (max-width: 1350px) {
+			#work {
+				margin-top: -50px;
 			}
+		}
 
-			.wrapper_jobs {
-				padding: 0 10%;
-				height: 100%;
-				width: 100%;
-				background-color: #F9F9FE;
-				color: #444;
-				display: grid;
-				text-align: center;
-				grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-				gap: 20px;
-			}
-
-			.wrapper_research {
-				padding: 0 30%;
-				height: 100%;
-				width: 100%;
-				background-color: #F9F9FE;
-				color: #444;
-				display: grid;
-				text-align: center;
-				grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-				gap: 20px;
-			}
-
-
-
-			.box {
-				text-align: center;
-				vertical-align: center;
-				align-content: center;
-				justify-content: center;
-				vertical-align: center;
-				background-color: rgb(0, 140, 158);
-				color: #fff;
-				border-radius: 5px;
-				padding: 20px;
-				font-size: 150%;
-			}
-
-			.box:hover {
-				transform: scale(1.1);
-			}
-
-			.projects_footer_size {
-				height: 150px;
-			}
-
+		@media screen and (max-width: 1200px) {
 			.my-img {
-				margin-left: 120px;
-				margin-top: -80px;
-				max-height: 500px;
-			}
-
-			.box-text {
-				color: white;
-				background: rgba(0, 0, 0, 0.6);
-				height: 100%;
-				width: 100%;
-				padding: 10%;
-				font-size: 18px;
-			}
-
-			.box-text-title {
-				color: white;
-				margin-bottom: 10%;
-				text-transform: uppercase
+				margin-left: 80px;
 			}
 
 			#work {
-				margin-top: -280px;
+				margin-top: 0px;
+			}
+		}
+
+		@media screen and (max-width: 1000px) {
+			.projects_footer_size {
+				height: 300px;
 			}
 
-			#research {
-				margin-top: -250px;
-				margin-bottom: -200px;
+			.my-img {
+				transform: scale(0.8);
 			}
 
-			@media screen and (max-width: 1350px) {
-				#work {
-					margin-top: -50px;
-				}
+			.my-img {
+				margin-bottom: -40px;
 			}
 
-			@media screen and (max-width: 1200px) {
-				.my-img {
-					margin-left: 80px;
-				}
+		}
 
-				#work {
-					margin-top: 0px;
-				}
-
-
+		@media screen and (max-width: 850px) {
+			.projects_footer_size {
+				height: 350px;
 			}
 
-			@media screen and (max-width: 1000px) {
-				.projects_footer_size {
-					height: 300px;
-				}
-
-				.my-img {
-					transform: scale(0.8);
-				}
-
-				.my-img {
-					margin-bottom: -40px;
-				}
+			.my-img {
+				margin-top: 0px;
 
 			}
 
-			@media screen and (max-width: 850px) {
-				.projects_footer_size {
-					height: 350px;
-				}
-
-				.my-img {
-					margin-top: 0px;
-
-				}
-
-				#work {
-					margin-top: 150px;
-				}
-
+			#work {
+				margin-top: 150px;
 			}
 
-			@media screen and (max-width: 800px) {
-				#work {
-					margin-top: 350px;
-				}
+		}
 
+		@media screen and (max-width: 800px) {
+			#work {
+				margin-top: 350px;
 			}
 
-			@media screen and (max-width: 700px) {
+		}
 
-				.my-img {
-					transform: scale(1);
-				}
+		@media screen and (max-width: 700px) {
 
-				.projects_footer_size {
-					height: 500px;
-				}
-
-				.my-img {
-					margin-bottom: 0px;
-				}
-
-				.wrapper_research {
-					padding: 0 10%;
-				}
+			.my-img {
+				transform: scale(1);
 			}
 
-			@media screen and (max-width: 600px) {
-				#work {
-					margin-top: 300px;
-				}
+			.projects_footer_size {
+				height: 500px;
 			}
 
-			@media screen and (max-width: 550px) {
-				#work {
-					margin-top: 400px;
-				}
+			.my-img {
+				margin-bottom: 0px;
 			}
 
-			@media screen and (max-width: 525px) {
-				#work {
-					margin-top: 950px;
-				}
+			.wrapper_research {
+				padding: 0 10%;
 			}
+		}
 
-			@media screen and (max-width: 500px) {
-				.projects_footer_size {
-					height: 700px;
-				}
+		@media screen and (max-width: 600px) {
+			#work {
+				margin-top: 300px;
 			}
+		}
 
-			@media screen and (max-width: 400px) {
-				.projects_footer_size {
-					height: 900px;
-				}
+		@media screen and (max-width: 550px) {
+			#work {
+				margin-top: 400px;
 			}
-		</style>
+		}
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-		<!--
+		@media screen and (max-width: 525px) {
+			#work {
+				margin-top: 950px;
+			}
+		}
+
+		@media screen and (max-width: 500px) {
+			.projects_footer_size {
+				height: 700px;
+			}
+		}
+
+		@media screen and (max-width: 400px) {
+			.projects_footer_size {
+				height: 900px;
+			}
+		}
+	</style>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<!--
 			CSS
 			============================================= -->
-		<link rel="stylesheet" href="css/linearicons.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/magnific-popup.css">
-		<link rel="stylesheet" href="css/owl.carousel.css">
-		<link rel="stylesheet" href="css/main.css">
-	</head>
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
 
-	<body>
-		<!-- start banner Area -->
-		<section class="banner-area" id="home">
-			<!-- Start Header Area -->
-			<header class="default-header">
-				<nav class="navbar navbar-expand-lg  navbar-light">
-					<div class="container">
-						<a class="navbar-brand" href="index.html">
-							<h1 class="text-white">
-								<span>NC</span>
-							</h1>
-						</a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse"
-							data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-							aria-expanded="false" aria-label="Toggle navigation">
-							<span class="text-white lnr lnr-menu"></span>
-						</button>
+<body>
 
-						<div class="collapse navbar-collapse justify-content-end align-items-center"
-							id="navbarSupportedContent">
-							<ul class="navbar-nav">
-								<li><a href="#home">Home</a></li>
-								<li><a href="#project">Projects</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#research">Research</a></li>
-								<li><a href="#resume">Resume</a></li>
-								<li><a href="#contact">Contact</a></li>
-							</ul>
-						</div>
-					</div>
-				</nav>
-			</header>
-			<!-- End Header Area -->
-			<div class="container">
-				<div class="row justify-content-start align-items-center">
-					<div class="col-lg-6 col-md-12 no-padding banner-right">
-						<img class="my-img img-fluid" src="img/header-img.png" alt="">
-					</div>
-					<div class="col-lg-6 col-md-12 banner-left">
+	<!-- start banner Area -->
+	<section class="banner-area" id="home">
+
+		<!-- Start Header Area -->
+		<header class="default-header">
+			<nav class="navbar navbar-expand-lg  navbar-light">
+				<div class="container">
+					<a class="navbar-brand" href="index.html">
 						<h1 class="text-white">
-							Hi, I’m <br />
-							<span>Nick Carmont</span> <br />
-							Data Scientist <br />🤓🤖
+							<span>NC</span>
 						</h1>
-						<p class="mx-auto text-white  mt-20 mb-40">
-							Thanks for stopping by 😊
-						</p>
-						<a href="#project" class="text-uppercase header-btn"> Look at my recent Projects</span></a>
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="text-white lnr lnr-menu"></span>
+					</button>
+
+					<div class="collapse navbar-collapse justify-content-end align-items-center"
+						id="navbarSupportedContent">
+						<ul class="navbar-nav">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#project">Projects</a></li>
+							<li><a href="#work">Work</a></li>
+							<li><a href="#research">Research</a></li>
+							<li><a href="#resume">Resume</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- End Header Area -->
+		<div class="container">
+			<div class="row justify-content-start align-items-center">
+				<div class="col-lg-6 col-md-12 no-padding banner-right">
+					<img class="my-img img-fluid" src="img/header-img.png" alt="">
+				</div>
+				<div class="col-lg-6 col-md-12 banner-left">
+					<h1 class="text-white">
+						Hi, I’m <br />
+						<span>Nick Carmont</span> <br />
+						Data Scientist <br />🤓🤖
+					</h1>
+					<p class="mx-auto text-white  mt-20 mb-40">
+						Thanks for stopping by 😊
+					</p>
+					<a href="#project" class="text-uppercase header-btn"> Look at my recent Projects</span></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End banner Area -->
+
+
+	<!-- Start project Area -->
+	<section class="project-area section-gap " id="project">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content pb-70 col-lg-8">
+					<div class="title text-center">
+						<h1 class="mb-10" style="margin-top:-40px;"> 👨‍💻Recent Projects</h1>
+						<p>Click the projects to learn more</p>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- End banner Area -->
+		</div>
 
 
-		<!-- Start project Area -->
-		<section class="project-area section-gap " id="project">
-			<!-- <div class="row">
-					<div class="col-lg-12"> -->
-			<div class="container">
-				<div class="row d-flex justify-content-center">
-					<div class="menu-content pb-70 col-lg-8">
-						<div class="title text-center">
-							<h1 class="mb-10" style="margin-top:-40px;"> 👨‍💻Recent Projects</h1>
-							<p>Click the projects to learn more</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="single-project pb-150 col-lg-12" style="margin-top:-40px;">
-				<div class="pb-150 wrapper">
-					<a class="box a" href="https://fitpic.io/" target="_blank" style="background-image: url('img/fitpic-logo-bg.png');border: 1px solid #DCDCDC;
+		<div class="single-project pb-150 col-lg-12" style="margin-top:-40px;">
+			<div class="pb-150 wrapper">
+				<a class="box a" href="https://fitpic.io/" target="_blank" style="background-image: url('img/fitpic-logo-bg.png');border: 1px solid #DCDCDC;
 								background-size:cover; background-repeat:no-repeat;background-position: center center;">
-						<div class="box-text">
-							<h3 class="box-text-title">Fitpic<img src="img/link-white.png"
-									style="margin-left: 5px;width:25px; height:25px" /></h3>
-							Measuring Body Fat Percentage with neural networks
-						</div>
+					<div class="box-text">
+						<h3 class="box-text-title">Fitpic<img src="img/link-white.png"
+								style="margin-left: 5px;width:25px; height:25px" /></h3>
+						Measuring Body Fat Percentage with neural networks
+					</div>
 
-					</a>
-					<a class="box j"
-						href="https://www.hackerearth.com/challenges/hackathon/cal-hacks-50/dashboard/a14712b/submission/"
-						target="_blank"
-						style="background-image: url('img/silicon-valet.png'); border: 1px solid #DCDCDC;
+				</a>
+				<a class="box j"
+					href="https://www.hackerearth.com/challenges/hackathon/cal-hacks-50/dashboard/a14712b/submission/"
+					target="_blank"
+					style="background-image: url('img/silicon-valet.png'); border: 1px solid #DCDCDC;
 							 background-color: white; background-size:cover; background-repeat:no-repeat;background-position: center center;">
-						<div class="box-text">
-							<h3 class="box-text-title" style="margin-bottom: 5%; font-size: 20px;">Silicon Valet <img
-									src="img/link-white.png" style="margin-left: 5px;width:20px; height:20px" /></h3>
-							Computer Vision Car Parking App
-							<div style="color:white; margin-top: 10%; font-size:16px;">🏆$1000 Berkeley Fellowship + Ford
-								Award Winner
-							</div>
+					<div class="box-text">
+						<h3 class="box-text-title" style="margin-bottom: 5%; font-size: 20px;">Silicon Valet <img
+								src="img/link-white.png" style="margin-left: 5px;width:20px; height:20px" /></h3>
+						Computer Vision Car Parking App
+						<div style="color:white; margin-top: 10%; font-size:16px;">🏆$1000 Berkeley Fellowship + Ford
+							Award Winner
 						</div>
-					</a>
-					<!-- <a class="box f" href="https://chrome.google.com/webstore/detail/yangify/nmpebejinamipihkbljdebclabebjndc?authuser=1" target="_blank"
+					</div>
+				</a>
+				<!-- <a class="box f" href="https://chrome.google.com/webstore/detail/yangify/nmpebejinamipihkbljdebclabebjndc?authuser=1" target="_blank"
 						style="background-image: url('img/yangify.png'); border: 1px solid #DCDCDC;
 								 background-color: red; background-size:cover; background-repeat:no-repeat;background-position: center center;">
 						
@@ -331,7 +332,7 @@
 								<h3 class="box-text-title">yangify</h3>
 								Replacement Chrome extension</div>
 					</a> -->
-					<!-- <a class="box g" href="https://www.youtube.com/channel/UC8n1bMFsJSicOoDtpS3p0VA" target="_blank"
+				<!-- <a class="box g" href="https://www.youtube.com/channel/UC8n1bMFsJSicOoDtpS3p0VA" target="_blank"
 						style="background-image: url('img/cc.png'); border: 1px solid #DCDCDC;
 								 background-color: white; background-size:cover; background-repeat:no-repeat;background-position: center center;">
 						
@@ -339,255 +340,257 @@
 								<h3 class="box-text-title" style="font-size:20px;">Carmont Connection </h3>
 								Machine learning tutorials</div>
 					</a> -->
-					<a class="box h" href="https://github.com/ncarmont/toxic-tweet/blob/master/README.MD" target="_blank"
-						style="background-image: url('img/twitter.png'); border: 1px solid #DCDCDC;
+				<a class="box h" href="https://github.com/ncarmont/toxic-tweet/blob/master/README.MD" target="_blank"
+					style="background-image: url('img/twitter.png'); border: 1px solid #DCDCDC;
 								 background-color: white; background-size:cover; background-repeat:no-repeat;background-position: center center;">
-						<div class="box-text">
-							<h3 class="box-text-title" style="font-size:20px;">Toxic Tweet <img src="img/link-white.png"
-									style="margin-left: 5px;width:25px; height:25px" /></h3>
-							Hate speech detector for Twitter with logistic regression
+					<div class="box-text">
+						<h3 class="box-text-title" style="font-size:20px;">Toxic Tweet <img src="img/link-white.png"
+								style="margin-left: 5px;width:25px; height:25px" /></h3>
+						Hate speech detector for Twitter with logistic regression
 
-						</div>
-					</a>
-					<a class="box l" href="https://www.youtube.com/watch?v=urYc33UuqRU" target="_blank"
-						style="background-image: url('img/precious-plastic.png'); border: 1px solid #DCDCDC;
+					</div>
+				</a>
+				<a class="box l" href="https://www.youtube.com/watch?v=urYc33UuqRU" target="_blank"
+					style="background-image: url('img/precious-plastic.png'); border: 1px solid #DCDCDC;
 								 background-color: white; background-size:cover; background-repeat:no-repeat;background-position: center center;">
 
-						<div class="box-text">
-							<h3 class="box-text-title" style="font-size:20px;">Precious Plastic Edinburgh <img
-									src="img/link-white.png" style="margin-left: 5px;width:25px; height:25px" /></h3>
-							Building plastic recycling machines
-							<div style="color:white; margin-top: 10%; font-size:16px;">🏆SRS Award</div>
+					<div class="box-text">
+						<h3 class="box-text-title" style="font-size:20px;">Precious Plastic Edinburgh <img
+								src="img/link-white.png" style="margin-left: 5px;width:25px; height:25px" /></h3>
+						Building plastic recycling machines
+						<div style="color:white; margin-top: 10%; font-size:16px;">🏆SRS Award</div>
 
-						</div>
-					</a>
-					<a class="box m" href="https://www.youtube.com/watch?v=7xsV-7jg59A" target="_blank"
-						style="background-image: url('img/zesty.png'); border: 1px solid #DCDCDC;
+					</div>
+				</a>
+				<a class="box m" href="https://www.youtube.com/watch?v=7xsV-7jg59A" target="_blank"
+					style="background-image: url('img/zesty.png'); border: 1px solid #DCDCDC;
 							 background-color: white; background-size:cover; background-repeat:no-repeat;background-position: center center;">
-						<div class="box-text">
-							<h3 class="box-text-title" style="font-size:20px;">Zesty <img src="img/link-white.png"
-									style="margin-left: 5px;width:25px; height:25px" /></h3>
-							Leftover Food sharing platform concept
-							<div style="color:white; margin-top: 10%; font-size:16px;">🏆Peer Choice Award Winner</div>
+					<div class="box-text">
+						<h3 class="box-text-title" style="font-size:20px;">Zesty <img src="img/link-white.png"
+								style="margin-left: 5px;width:25px; height:25px" /></h3>
+						Leftover Food sharing platform concept
+						<div style="color:white; margin-top: 10%; font-size:16px;">🏆Peer Choice Award Winner</div>
 
-						</div>
-					</a>
+					</div>
+				</a>
 
-				</div>
 			</div>
-			</div>
-		</section>
-		<!-- Start project Area -->
-		<section class="project-area" id="work">
-			<div class="container">
-				<div class="row d-flex justify-content-center">
-					<div class="menu-content pb-70 col-lg-8" style="margin-top:450px;">
-						<div class="title text-center">
-							<h1 class="mb-10" style="margin-top:-40px;">💼 Work Experience</h1>
-							<p>Where I've been working recently</p>
-						</div>
+		</div>
+		</div>
+	</section>
+	<!-- End Project Area -->
+
+	<!-- Start Work Area -->
+	<section class="project-area" id="work">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content pb-70 col-lg-8" style="margin-top:450px;">
+					<div class="title text-center">
+						<h1 class="mb-10" style="margin-top:-40px;">💼 Work Experience</h1>
+						<p>Where I've been working recently</p>
 					</div>
 				</div>
 			</div>
+		</div>
 
-			<div class="single-project pb-150 col-lg-12" style="margin-top:-40px;">
-				<div class="pb-150 wrapper_jobs">
-					<a class="box a" href="https://fitpic.io/" target="_blank" style="background-image: url('img/fitpic-logo-bg.png');border: 1px solid #DCDCDC;
+		<div class="single-project pb-150 col-lg-12" style="margin-top:-40px;">
+			<div class="pb-150 wrapper_jobs">
+				<a class="box a" href="https://fitpic.io/" target="_blank" style="background-image: url('img/fitpic-logo-bg.png');border: 1px solid #DCDCDC;
 										background-size:cover; background-repeat:no-repeat;background-position: center center;">
 
-						<div class="box-text">
-							<h3 class="box-text-title">FitPic</h3>
-							Founder and Machine Learning Engineer
-							<div style="color:white; margin-top: 10%; font-size:11px;"> Developing a Tensorflow model for
-								visual body fat prediction</div>
-						</div>
-					</a>
-					<a class="box b" style="background-image: url('img/nike.jpg');border: 1px solid #DCDCDC;
+					<div class="box-text">
+						<h3 class="box-text-title">FitPic</h3>
+						Founder and Machine Learning Engineer
+						<div style="color:white; margin-top: 10%; font-size:11px;"> Developing a Tensorflow model for
+							visual body fat prediction</div>
+					</div>
+				</a>
+				<a class="box b" style="background-image: url('img/nike.jpg');border: 1px solid #DCDCDC;
 										background-size:cover; background-repeat:no-repeat;background-position: center center;">
 
-						<div class="box-text">
-							<h3 class="box-text-title">Nike</h3>
-							Data and Software Engineering Intern
-							<div style="color:white; margin-top: 10%; font-size:12px;"> Built Data Visualisation tool for
-								A/B testing platform tested on 180K+ users</div>
-						</div>
-					</a>
-					<a class="box e" href="https://www.youtube.com/watch?v=T9cAixLaW-8" target="_blank"
-						style="background-image: url('img/INGENIARIUS.png'); border: 1px solid #DCDCDC;
+					<div class="box-text">
+						<h3 class="box-text-title">Nike</h3>
+						Data and Software Engineering Intern
+						<div style="color:white; margin-top: 10%; font-size:12px;"> Built Data Visualisation tool for
+							A/B testing platform tested on 180K+ users</div>
+					</div>
+				</a>
+				<a class="box e" href="https://www.youtube.com/watch?v=T9cAixLaW-8" target="_blank"
+					style="background-image: url('img/INGENIARIUS.png'); border: 1px solid #DCDCDC;
 										 background-color: red; background-size:cover; background-repeat:no-repeat;background-position: center center;">
 
-						<div class="box-text">
-							<h3 class="box-text-title">Ingeniarius</h3>
-							Self-driving RC Car Robotics Fellowship
-							<div style="color:white; margin-top: 10%; font-size:11px;"> Worked with team of students to
-								develop RC car for Robotcraft 2017</div>
-						</div>
-					</a>
+					<div class="box-text">
+						<h3 class="box-text-title">Ingeniarius</h3>
+						Self-driving RC Car Robotics Fellowship
+						<div style="color:white; margin-top: 10%; font-size:11px;"> Worked with team of students to
+							develop RC car for Robotcraft 2017</div>
+					</div>
+				</a>
 
-					<a class="box k" href="https://www.facebook.com/SEWF2019/videos/2085655315081033/" target="_blank"
-						style="background-image: url('img/pwc.jpg'); border: 1px solid #DCDCDC;
+				<a class="box k" href="https://www.facebook.com/SEWF2019/videos/2085655315081033/" target="_blank"
+					style="background-image: url('img/pwc.jpg'); border: 1px solid #DCDCDC;
 									 background-color: white; background-size:cover; background-repeat:no-repeat;background-position: center center;">
-						<div class="box-text">
-							<h3 class="box-text-title">PwC</h3>
-							The Young Talents Program
-							<div style="color:white; margin-top: 10%; font-size:11px;"> Week-long enterprise Program on
-								sustainabible business practices</div>
-						</div>
-					</a>
-					<a class="box i" href="https://onecherry.co.uk" target="_blank"
-						style="background-image: url('img/one-cherry.png'); border: 1px solid #DCDCDC;
+					<div class="box-text">
+						<h3 class="box-text-title">PwC</h3>
+						The Young Talents Program
+						<div style="color:white; margin-top: 10%; font-size:11px;"> Week-long enterprise Program on
+							sustainabible business practices</div>
+					</div>
+				</a>
+				<a class="box i" href="https://onecherry.co.uk" target="_blank"
+					style="background-image: url('img/one-cherry.png'); border: 1px solid #DCDCDC;
 										 background-color: white; background-size:cover; background-repeat:no-repeat;background-position: center center;">
-						<div class="box-text">
-							<h3 class="box-text-title">One Cherry</h3>
-							Software Engineer
-							<div style="color:white; margin-top: 10%; font-size:11px;"> Helped develop charity shop
-								platform with 1000 visits in 3 days</div>
-						</div>
-					</a>
+					<div class="box-text">
+						<h3 class="box-text-title">One Cherry</h3>
+						Software Engineer
+						<div style="color:white; margin-top: 10%; font-size:11px;"> Helped develop charity shop
+							platform with 1000 visits in 3 days</div>
+					</div>
+				</a>
 
-				</div>
 			</div>
-			</div>
-		</section>
-		<section class="project-area" id="research">
-			<div class="container">
-				<div class="row d-flex justify-content-center">
-					<div class="menu-content pb-70 col-lg-8" style="margin-top:100px;">
-						<div class="title text-center">
-							<h1 class="mb-10" style="margin-top:-40px;">🔬 Unpublished Papers</h1>
-							<p>Some research I've worked on</p>
-						</div>
+		</div>
+		</div>
+	</section>
+	<!-- End Work Area -->
+
+	<!-- End Research Area -->
+	<section class="project-area" id="research">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content pb-70 col-lg-8" style="margin-top:100px;">
+					<div class="title text-center">
+						<h1 class="mb-10" style="margin-top:-40px;">🔬 Unpublished Papers</h1>
+						<p>Some research I've worked on</p>
 					</div>
 				</div>
 			</div>
+		</div>
 
-			<div class="single-project  col-lg-12" style="margin-top:-20px; margin-bottom: 300px;">
-				<div class=" pb-70 wrapper_research" style="background-color: #F9F9FE;">
-
-
-
-
-					<a class="box d" style=" background-image: url('img/caffe-net.png');
+		<div class="single-project  col-lg-12" style="margin-top:-20px; margin-bottom: 300px;">
+			<div class=" pb-70 wrapper_research" style="background-color: #F9F9FE;">
+				<a class="box d" style=" background-image: url('img/caffe-net.png');
 											background-size:cover; background-repeat:no-repeat;background-position: center center;
 											background-color: #6F4E36; border: 1px solid #DCDCDC;">
 
 
-						<div class="box-text">
-							<h3 class="box-text-title">Deep Learning</h3>
-							Improving Facial Age Classification with our
-							adapted Caffe Net CNN
-						</div>
-					</a>
-					<a class="box c" style="background-image: url('img/Reddit.png');
+					<div class="box-text">
+						<h3 class="box-text-title">Deep Learning</h3>
+						Improving Facial Age Classification with our
+						adapted Caffe Net CNN
+					</div>
+				</a>
+				<a class="box c" style="background-image: url('img/Reddit.png');
 											background-size:cover; background-repeat:no-repeat;background-position: center center;
 										 background-color: #FF4500;border: 1px solid #DCDCDC;">
 
-						<div class="box-text">
-							<h3 class="box-text-title">Recommender Systems</h3>
-							Reddit post popularity prediction with sentiment analysis and collaborative filtering
-						</div>
-					</a>
-
-				</div>
+					<div class="box-text">
+						<h3 class="box-text-title">Recommender Systems</h3>
+						Reddit post popularity prediction with sentiment analysis and collaborative filtering
+					</div>
+				</a>
 			</div>
-			</div>
-		</section>
-		<!-- End project Area -->
-		<!-- Start qualification Area -->
-		<section class="qualification-area" id="resume" style="margin-bottom: 50px;">
-			<div class="container">
-				<div class="row d-flex justify-content-center">
-					<div class="menu-content pb-20 col-lg-8">
-						<div class="title text-center">
-							<h1 class="mb-10 margin-top:-80px;">💼 Resume</h1>
-							<p>Want to see my resume?</p>
+		</div>
+		</div>
+	</section>
+	<!-- End Research Area -->
 
-							<div class="myself-wrap" style="background-color: transparent; margin-top:-40px;">
-								<div class="desc">
-									<a class="mt-30 text-uppercase talk-btn" style="transform:scale(1.3)"
-										href="mailto:nickcarmont8@gmail.com?subject=Hi Nick - Send Me Your Resume :)">
-										<!-- download >-->
-										📨 Get My Resume Emailed To You</span></a>
-								</div>
+	<!-- Start Resume Area -->
+	<section class="qualification-area" id="resume" style="margin-bottom: 50px;">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content pb-20 col-lg-8">
+					<div class="title text-center">
+						<h1 class="mb-10 margin-top:-80px;">💼 Resume</h1>
+						<p>Want to see my resume?</p>
+
+						<div class="myself-wrap" style="background-color: transparent; margin-top:-40px;">
+							<div class="desc">
+								<a class="mt-30 text-uppercase talk-btn" style="transform:scale(1.3)"
+									href="mailto:nickcarmont8@gmail.com?subject=Hi Nick - Send Me Your Resume :)">
+									<!-- download >-->
+									📨 Get My Resume Emailed To You</span></a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- End qualification Area -->
+		</div>
+	</section>
+	<!-- End Resume Area -->
 
-		<!-- Start about Area -->
-		<section class="about-area section-gap" id="contact" style="margin-bottom:-100px;">
-			<div class="container">
-				<div class="row d-flex justify-content-center">
-					<div class="menu-content pb-70 col-lg-8">
-						<div class="title text-center">
-							<h1 class="mb-10" style="margin-top:-40px;"> 📩 Contact</h1>
-							<p>Drop me a message</p>
-						</div>
+	<!-- Start Contact Area -->
+	<section class="about-area section-gap" id="contact" style="margin-bottom:-100px;">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content pb-70 col-lg-8">
+					<div class="title text-center">
+						<h1 class="mb-10" style="margin-top:-40px;"> 📩 Contact</h1>
+						<p>Drop me a message</p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-12" style="width: 100%;text-align: center; margin-top:-90px;">
-						<div class="myself-wrap" style="transform:scale(0.9);">
-							<img class="img-fluid" src="img/about-img.jpg" alt="">
-							<div class="desc" style="transform:scale(1.15);">
-								<h4>Nick Carmont</h4>
-								<p class="pb-10">Machine Learning Engineer</p>
-								<p><span class="lnr lnr-phone"></span> +44 7786107297</p>
-								<p><span class="lnr lnr-envelope"></span> nickcarmont8@gmail.com</p>
-								<a class="mt-30 text-uppercase talk-btn"
-									href="mailto:nickcarmont8@gmail.com?subject=Hey Nick - I'd like to talk">
-									Message Me Now</span></a>
-							</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12" style="width: 100%;text-align: center; margin-top:-90px;">
+					<div class="myself-wrap" style="transform:scale(0.9);">
+						<img class="img-fluid" src="img/about-img.jpg" alt="">
+						<div class="desc" style="transform:scale(1.15);">
+							<h4>Nick Carmont</h4>
+							<p class="pb-10">Machine Learning Engineer</p>
+							<p><span class="lnr lnr-phone"></span> +44 7786107297</p>
+							<p><span class="lnr lnr-envelope"></span> nickcarmont8@gmail.com</p>
+							<a class="mt-30 text-uppercase talk-btn"
+								href="mailto:nickcarmont8@gmail.com?subject=Hey Nick - I'd like to talk">
+								Message Me Now</span></a>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- End about Area -->
+		</div>
+	</section>
+	<!-- End Contact Area -->
 
-		<!-- start footer Area -->
-		<footer class="footer-area section-gap">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5  col-md-6 col-sm-6">
-						<div class="single-footer-widget">
-							<h6>About Me</h6>
-							<p>
-								I'm a hackathon fanatic (attended 6+),
-								love football especially FC Barcelona.
-								Half Spanish, half Australian.
-								Grew up in the Netherlands.
-								Spend Friday nights coding and watching Limitless.
-							</p>
+	<!-- start footer Area -->
+	<footer class="footer-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h6>About Me</h6>
+						<p>
+							I'm a hackathon fanatic (attended 6+),
+							love football especially FC Barcelona.
+							Half Spanish, half Australian.
+							Grew up in the Netherlands.
+							Spend Friday nights coding and watching Limitless.
+						</p>
 
-							<p class="footer-text">Copyright &copy;<script>
-									document.write(new Date().getFullYear());
-								</script> All rights reserved | This template is made with <i class="fa fa-heart-o"
-									aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-							</p>
+						<p class="footer-text">Copyright &copy;
+							<script>
+								document.write(new Date().getFullYear());
+							</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by
+							<a href="https://colorlib.com" target="_blank">Colorlib</a>
+						</p>
 
-						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
-		<!-- End footer Area -->
+		</div>
+	</footer>
+	<!-- End footer Area -->
 
-		<script src="js/vendor/jquery-2.2.4.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
-			integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
 		</script>
-		<script src="js/vendor/bootstrap.min.js"></script>
-		<script src="js/jquery.ajaxchimp.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/parallax.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/jquery.sticky.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
 
-		<script src="js/main.js"></script>
-	</body>
+	<script src="js/main.js"></script>
+</body>
 
-	</html>
+</html>
