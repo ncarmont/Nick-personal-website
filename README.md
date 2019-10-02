@@ -1,5 +1,5 @@
 # nick-personal-website
-carmont.io
+www.carmont.io
 
 ## A new take on Colorlib's amazing personal website template
 
