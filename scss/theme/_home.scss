@@ -88,7 +88,7 @@
 	font-weight:600;
 	border:1px solid #f4f4f4;
 	padding: 5px 30px;
-	border-radius: 20px;	
+	border-radius: 20px;
 	&:hover{
 		@extend .p1-gradient-bg;
 		color:#fff;
@@ -128,14 +128,14 @@
     text-align:left;
     @media(max-width:767px){
 	    text-align:left;
-		padding: 0.25rem;   
+		padding: 0.25rem;
     }
- 
+
 }
 
 @media (min-width: 768px) {
 	.dropdown .dropdown-menu{
-		display: block; 
+		display: block;
 		opacity:0;
 		-webkit-transition: all 200ms ease-in;
 		-moz-transition: all 200ms ease-in;
@@ -151,12 +151,12 @@
 
 
 .dropdown-menu{
-	@extend .p1-gradient-bg;	
+	@extend .p1-gradient-bg;
     border-radius:0;
     margin-top:15px;
     border:none;
      a{
-		padding: 5px 15px;    	
+		padding: 5px 15px;
     }
     @media(max-width:767px){
 		margin-top:0px;
@@ -173,7 +173,7 @@
 
 .is-sticky .default-header{
 	@include transition();
-	background-color:$white;	
+	background-color:$white;
 }
 
 .banner-area {
@@ -194,7 +194,7 @@
 		font-size: 36px;
 		font-weight: 100;
 		line-height: 1em;
-		margin-bottom:40px;	
+		margin-bottom:40px;
 		span{
 			text-transform:uppercase;
 			font-weight:700;
@@ -210,7 +210,7 @@
 
 		@include media-breakpoint-down (lg) {
 				font-size:45px;
-		}	
+		}
 
 		@media ( max-width:414px ) {
 			font-size:40px;
@@ -218,8 +218,8 @@
 	}
 	@media(max-width: 800px) {
 		padding-bottom:40px;
-	}		
-}	
+	}
+}
 
 
 .banner-right{
@@ -243,7 +243,7 @@
 	padding:8px 40px;
 	font-weight:600;
 	color:$black;
-  	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);	
+  	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
 	border:1px solid transparent;
 	border-radius:20px;
 	&:hover{
@@ -293,10 +293,10 @@
 .myself-wrap{
 	background-color:$white;
 	display:inline-block;
-	
+
 	.desc{
 		padding: 35px;
-		text-align: center;  	 
+		text-align: center;
 		p{
 			margin-bottom:5px;
 		}
@@ -312,6 +312,7 @@
 			display: inline-block;
 			border-radius: 25px;
 			font-weight:400;
+			transition: background 0.5s, border 0.5s, color 0.5s;
 			&:hover{
 				background:transparent;
 				border:1px solid $black;
@@ -338,14 +339,14 @@
 		background-color: $white;
 		border-radius: 10px;
 		border: 1px solid #bababa;
-		padding: 2px; 	
+		padding: 2px;
     }
 }
 
 
 .skillbar-bar {
 			 border-collapse: separate;
-		border-spacing:100px; 
+		border-spacing:100px;
 	border-radius:10px;
     height: 10px;
     width: 0px;
@@ -485,7 +486,7 @@
 
 .form-area{
 	input{
-		padding: 15px;		
+		padding: 15px;
 	}
 	input,textarea{
 		border-radius:0;
@@ -513,7 +514,7 @@
 		font-size:18px;
 		font-weight:600;
 	}
-	
+
 	.copy-right-text{
 		i,a{
 			color:$primary-color;
@@ -528,13 +529,13 @@
 			padding-right:25px;
 			@include transition();
 			&:hover{
-			
+
 				i{
 						@extend .p1-gradient-color;
 				}
 			}
 		}
-		
+
 		i{
 			color:#cccccc;
 			@include transition();
@@ -633,15 +634,15 @@
 			margin-bottom:30px;
 		}
 	}
-		
+
 
 
 		@media(max-width:800px){
 			.social-widget{
 				margin-top:30px;
-			}			
+			}
 		}
-		
+
 
 	.footer-text{
 		padding-top:20px;
@@ -692,7 +693,7 @@
 
 .generic-content{
 	h1{
-		font-weight:600;	
+		font-weight:600;
 	}
 }
 
@@ -720,5 +721,3 @@
 	}
 }
 //----------- End Generic Page -------------//
-
-
